@@ -1,11 +1,11 @@
 body {
     background-color:
-     rgb(#FFFFFF);
-    color:(#212121);
+     rgb(#212121);
+    color:(#FFFFFF);
     font-family: sans-serif;
 }
 h1{
-    color: (#212121);
+    color: (#FFFFFF);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 300%;
 }
