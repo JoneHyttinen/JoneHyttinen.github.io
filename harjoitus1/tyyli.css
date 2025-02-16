@@ -1,6 +1,5 @@
 body {
-    background-color:#212121
-     rgb(#212121);
+    background-color:#212121;
     color:(#FFFFFF);
     font-family: sans-serif;
 }
@@ -10,6 +9,7 @@ h1{
     font-size: 300%;
 }
 p{
+    color: #FFFFFF;
     border: 2px solid #732BF5;
     padding: 10px;
     margin: 30px;
