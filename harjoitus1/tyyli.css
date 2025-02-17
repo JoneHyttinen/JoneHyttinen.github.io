@@ -37,3 +37,6 @@ a:visited{
     background-color: transparent;
     text-decoration: none;
 }
+img[src="trendikoru.jpg"]{
+    align-content: left;
+}
