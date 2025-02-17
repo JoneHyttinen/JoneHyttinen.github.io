@@ -3,6 +3,12 @@ body {
     color:#dbd7d7;
     font-family: sans-serif;
 }
+header {
+    background-color: #212121;
+    padding: 30px;
+    border: 2px solid #732BF5;
+    text-align: right;
+}
 h1{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
