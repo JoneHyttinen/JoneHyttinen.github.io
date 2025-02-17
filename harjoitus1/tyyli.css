@@ -21,3 +21,13 @@ p{
     padding: 10px;
     margin: 30px;
 }
+a:link{
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: #732BF5;
+    background-color: transparent;
+    text-decoration: none;
+}
