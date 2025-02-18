@@ -50,14 +50,18 @@ a:visited{
 
 #mainlogo{
     position:absolute;
-    bottom: 828px;
-    right: 1620px;
+    bottom: 823px;
+    right: 1605px;
+    width: 300px;
+    height: 92px;
 }
 
 #mainlogoscroll{
     position:absolute;
-    bottom: 828px;
-    right: 1605px;
+    bottom: 823px;
+    right: 1590px;
+    width: 300px;
+    height: 92px;
 }
 
 #textyhteystiedot{
