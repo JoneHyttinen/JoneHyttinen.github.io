@@ -3,22 +3,26 @@ body {
     color:#dbd7d7;
     font-family: sans-serif;
 }
+
 header {
     background-color: #212121;
     padding: 40px;
     border: 2px solid #732BF5;
     text-align: right;    
 }
+
 h1{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 400%;
 }
+
 h2{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 225%;
 }
+
 p{
     color: #dbd7d7;
     font-family: sans-serif;
@@ -27,29 +31,35 @@ p{
     padding: 10px;
     margin: 30px;
 }
+
 a:link{
     color: blue;
     background-color: transparent;
     text-decoration: none;
 }
+
 a:visited{
     color: #732BF5;
     background-color: transparent;
     text-decoration: none;
 }
+
 .spacing {
     word-spacing: 50px;
 }
+
 #mainlogo{
     position:absolute;
     bottom: 828px;
     right: 1620px;
 }
+
 #mainlogoscroll{
     position:absolute;
     bottom: 828px;
     right: 1605px;
 }
+
 #textyhteystiedot{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
