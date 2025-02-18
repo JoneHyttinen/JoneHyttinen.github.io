@@ -5,7 +5,7 @@ body {
 }
 header {
     background-color: #212121;
-    padding: 30px;
+    padding: 40px;
     border: 2px solid #732BF5;
     text-align: right;    
 }
@@ -37,6 +37,16 @@ a:visited{
     background-color: transparent;
     text-decoration: none;
 }
-#mainlogo {
-    text-align: left;
+.spacing {
+    word-spacing: 50px;
+}
+#mainlogo{
+    position:absolute;
+    bottom: 828px;
+    right: 1620px;
+}
+#mainlogoscroll{
+    position:absolute;
+    bottom: 828px;
+    right: 1605px;
 }
