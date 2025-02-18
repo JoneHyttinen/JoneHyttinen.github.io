@@ -50,3 +50,8 @@ a:visited{
     bottom: 828px;
     right: 1605px;
 }
+#textyhteystiedot{
+    color: #dbd7d7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 275%;
+}
