@@ -75,18 +75,20 @@ a:hover{
 }
 
 #etusivukuva1{
-    max-width: 400px;
+    max-width: 380px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
+    margin-left: 20px;
 }
 
 #etusivukuva2{
-    max-width: 400px;
+    max-width: 380px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
     float: right;
+    margin-right: 20px;
 }
 
 #textyhteystiedot{
@@ -103,6 +105,8 @@ a:hover{
 #ctoteksti{
     text-align: center;
     border: 2px solid #732BF5;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 ul{
