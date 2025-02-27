@@ -78,12 +78,29 @@ a:hover{
     max-width: 400px;
     vertical-align: middle;
     width: 100%;
+    border: 2px solid #732BF5;
+}
+
+#etusivukuva2{
+    max-width: 400px;
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid #732BF5;
+    float: right;
 }
 
 #textyhteystiedot{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 275%;
+    text-align: center;
+}
+
+#etuotsikko{
+    text-align: center;
+}
+
+#ctoteksti{
     text-align: center;
 }
 
