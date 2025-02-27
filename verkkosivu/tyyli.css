@@ -80,6 +80,8 @@ a:hover{
     width: 100%;
     border: 2px solid #732BF5;
     margin-left: 20px;
+    position: absolute;
+    bottom: -30%;
 }
 
 #etusivukuva2{
@@ -87,8 +89,10 @@ a:hover{
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
-    float: right;
     margin-right: 20px;
+    position: absolute;
+    bottom: -30%;
+    right: 0%;
 }
 
 #textyhteystiedot{
