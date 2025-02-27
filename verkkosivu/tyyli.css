@@ -12,14 +12,8 @@ header {
 }
 
 footer{
+    flex-direction: column;
     text-align: center;
-    background-color: #313030;
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 460px;
-    padding-right: 468px;
-    font-size: 16px;
 }
 
 h1{
@@ -69,6 +63,8 @@ a:hover{
 .spacing {
     word-spacing: 50px;
 }
+
+/*kuvat*/
 
 #mainlogo{
     position:absolute;
@@ -164,7 +160,15 @@ li a {
 
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
-    
+    footer{
+        text-align: center;
+        background-color: #313030;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-height: 15%;
+        font-size: 16px;
+    }
 }
 
 /*mobiili-koko*/
