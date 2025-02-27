@@ -74,6 +74,12 @@ a:hover{
     height: 92px;
 }
 
+#etusivukuva1{
+    max-width: 400px;
+    vertical-align: middle;
+    width: 100%;
+}
+
 #textyhteystiedot{
     color: #dbd7d7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
