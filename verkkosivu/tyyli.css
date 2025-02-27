@@ -38,9 +38,20 @@ a:link{
 }
 
 a:visited{
-    color: #732BF5;
+    color: #b82bf5;
     background-color: transparent;
     text-decoration: none;
+}
+
+a:hover{
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#valittu{
+    color: #dbd7d7;
+    background-color:rgb(72, 35, 89);
 }
 
 .spacing {
@@ -76,7 +87,7 @@ ul{
     padding: 5px;
     width: fit-content;
     overflow: hidden;
-    background-color: #333;
+    background-color: #313030;
     float: right;
     border: 1px solid #732BF5;
 }
@@ -96,4 +107,5 @@ li a {
   
   li a:hover {
     background-color: #111;
+    
   }
