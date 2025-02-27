@@ -7,7 +7,6 @@ body {
 header {
     background-color: #212121;
     padding: 5px;
-    border: 2px solid #732BF5;
     text-align: right;    
 }
 
@@ -51,7 +50,7 @@ a:visited{
 #mainlogo{
     position:absolute;
     bottom: 823px;
-    right: 1605px;
+    left: 0px;
     width: 300px;
     height: 92px;
 }
@@ -59,7 +58,7 @@ a:visited{
 #mainlogoscroll{
     position:absolute;
     bottom: 823px;
-    right: 1590px;
+    left: 15px;
     width: 300px;
     height: 92px;
 }
