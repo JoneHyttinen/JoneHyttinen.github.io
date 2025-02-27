@@ -160,6 +160,23 @@ li a {
 
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
+    nav a{
+        width: 100px;
+        height: 20px;
+        padding: 10px;
+        margin: 5px 20px;
+    }
+
+    li a {
+        display: block;
+        height: 15px;
+        color: #dbd7d7;
+        text-align: center;
+        padding: 15px 25px;
+        margin: 5px 15px;
+        text-decoration: none;
+    }
+
     footer{
         text-align: center;
         background-color: #313030;
