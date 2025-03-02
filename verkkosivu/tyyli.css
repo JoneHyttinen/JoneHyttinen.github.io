@@ -3,6 +3,7 @@ body {
     color:#dbd7d7;
     font-family: sans-serif;
     margin: 0px;
+    background-image: "background-kuva.jpg";
 }
 
 header {
@@ -68,42 +69,26 @@ a:hover{
 
 /*kuvat*/
 
-#mainlogo{
-    position:absolute;
-    bottom: 823px;
-    left: 0px;
-    width: 300px;
-    height: 92px;
-}
-
-#mainlogoscroll{
-    position:absolute;
-    bottom: 823px;
-    left: 15px;
-    width: 300px;
-    height: 92px;
-}
-
 #etusivukuva1{
-    max-width: 380px;
+    max-width: 450px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
     margin-left: 20px;
     margin-bottom: 40px;
     position: absolute;
-    bottom: -30%;
+    bottom: 10%;
 }
 
 #etusivukuva2{
-    max-width: 380px;
+    max-width: 450px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
     margin-right: 20px;
     margin-bottom: 40px;
     position: absolute;
-    bottom: -30%;
+    bottom: 10%;
     right: 0%;
 }
 
