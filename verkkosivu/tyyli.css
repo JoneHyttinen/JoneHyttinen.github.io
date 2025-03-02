@@ -110,23 +110,23 @@ li a {
 }
 
 #etusivukuva1{
-    max-width: 450px;
+    max-width: 400px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
     margin-left: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 3%;
     position: absolute;
     bottom: 10%;
 }
 
 #etusivukuva2{
-    max-width: 450px;
+    max-width: 400px;
     vertical-align: middle;
     width: 100%;
     border: 2px solid #732BF5;
     margin-right: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 3%;
     position: absolute;
     bottom: 10%;
     right: 0%;
