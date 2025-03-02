@@ -1,3 +1,5 @@
+/*body ja sen elementit*/
+
 body {
     background-color:#212121;
     color:#dbd7d7;
@@ -39,6 +41,8 @@ p{
     margin: 30px;
 }
 
+/*linkit asettelu ja värit*/
+
 a:link{
     color: #dbd7d7;
     background-color: transparent;
@@ -62,9 +66,35 @@ a:hover{
     background-color:rgb(72, 35, 89);
 }
 
-.spacing {
-    word-spacing: 50px;
+/*listat*/
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+    overflow: hidden;
+    background-color: #313030;
+    float: right;
+    border: 1px solid #732BF5;
 }
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    height: 15px;
+    color: #dbd7d7;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111; 
+  }
 
 /*kuvat*/
 
@@ -100,16 +130,11 @@ a:hover{
     text-align: center;
 }
 
-#etuotsikko{
-    text-align: center;
-    margin-top: 8%;
-}
-
 #ctoteksti{
     text-align: center;
     border: 2px solid #732BF5;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #footerteksti{
@@ -117,40 +142,34 @@ a:hover{
     border: 0;
 }
 
-ul{
-    list-style-type: none;
-    margin: 10px;
-    padding: 5px;
-    width: fit-content;
-    overflow: hidden;
-    background-color: #313030;
-    float: right;
-    border: 1px solid #732BF5;
+.spacing {
+    word-spacing: 50px;
 }
 
-li{
-    float: left;
+/*etusivu asettelu*/
+
+.teksti1 {
+    grid-area: g1;
 }
 
-li a {
-    display: block;
-    height: 15px;
-    color: #dbd7d7;
+.teksti1-container {
+    background-color: #212121;
+    display: inline-block;
+    width: 35%;
     text-align: center;
-    padding: 15px 25px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111; 
-  }
+    margin-top: 8%;
+    border: 2px solid #732BF5;
+    margin-left: 35%;
+    margin-right: 35%;
+}
 
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
     #etusivu {
-        background-image: "backgroundkuva.jpg";
+        background-image: url("background-kuva.jpg");
         background-size: cover;
         height: 950px;
+        width: 100%;
     }
 
     nav a{
