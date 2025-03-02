@@ -150,6 +150,7 @@ li a {
     #etusivu {
         background-image: "backgroundkuva.jpg";
         background-size: cover;
+        height: 950px;
     }
 
     nav a{
