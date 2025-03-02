@@ -3,7 +3,6 @@ body {
     color:#dbd7d7;
     font-family: sans-serif;
     margin: 0px;
-    background-image: "background-kuva.jpg";
 }
 
 header {
@@ -148,6 +147,11 @@ li a {
 
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
+    #etusivu {
+        background-image: "backgroundkuva.jpg";
+        background-size: cover;
+    }
+
     nav a{
         width: 100px;
         height: 20px;
