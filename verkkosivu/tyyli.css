@@ -159,10 +159,6 @@ li a {
 
 /*etusivu asettelu*/
 
-.teksti1 {
-    grid-area: g1;
-}
-
 .teksti1-container {
     background-color: #212121;
     display: inline-block;
