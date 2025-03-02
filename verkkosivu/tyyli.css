@@ -6,9 +6,11 @@ body {
 }
 
 header {
-    background-color: #212121;
+    background-color: #313030;
     padding-bottom: 70px;
-    text-align: right;    
+    text-align: right;
+    height: 20px;
+    width: 100%;    
 }
 
 footer{
@@ -104,6 +106,8 @@ a:hover{
     bottom: -30%;
     right: 0%;
 }
+
+/*tekstit*/
 
 #textyhteystiedot{
     color: #dbd7d7;
