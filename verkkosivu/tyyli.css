@@ -229,6 +229,14 @@ li a {
 
 /*mobiili-koko*/
 @media (max-width: 600px) {
+    header {
+        background-color: #313030;
+        padding-bottom: 75px;
+        text-align: center;
+        height: 20px;
+        width: 100%;    
+    }
+
     nav a{
         font-size: 15px;
         width: 100px;
