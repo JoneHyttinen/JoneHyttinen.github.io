@@ -118,9 +118,9 @@ li a {
     vertical-align: middle;
     border: 2px solid #732BF5;
     margin-left: 25px;
-    margin-bottom: 0px;
+    margin-top: 10%;
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
 }
 
 #etusivukuva2{
@@ -128,9 +128,9 @@ li a {
     vertical-align: middle;
     border: 2px solid #732BF5;
     margin-right: 25px;
-    margin-bottom: 0px;
+    margin-top: 10%;
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     right: 0%;
 }
 
@@ -195,7 +195,7 @@ li a {
     #etusivu {
         background-image: url("background-kuva.jpg");
         background-size: cover;
-        height: 950px;
+        height: 800px;
         width: 100%;
     }
 
