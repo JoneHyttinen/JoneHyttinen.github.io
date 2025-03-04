@@ -231,7 +231,7 @@ li a {
 @media (max-width: 600px) {
     header {
         background-color: #313030;
-        padding-bottom: 75px;
+        padding-bottom: 80px;
         text-align: center;
         height: 20px;
         width: 100%;    
