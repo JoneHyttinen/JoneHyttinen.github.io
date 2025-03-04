@@ -43,7 +43,8 @@ p{
     font-size: 120%;
     border: 2px solid #732BF5;
     padding: 10px;
-    margin: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 /*linkit asettelu ja värit*/
@@ -175,6 +176,12 @@ li a {
     margin-top: 10%;
     border: 2px solid #732BF5;
     margin-left: 32%;
+}
+
+/*tuotesivu asettelu*/
+
+.tuotteet-asettelu{
+    text-align: center;
 }
 
 /*suuri näyttö*/
