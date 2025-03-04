@@ -79,7 +79,7 @@ ol{
     padding: 5px;
     width: fit-content;
     overflow: hidden;
-    background-color: #313030;
+    background-color: #212121;
     float: right;
     border: 1px solid #732BF5;
 }
@@ -133,6 +133,11 @@ li a {
     position: absolute;
     bottom: 0%;
     right: 0%;
+}
+
+#korvakoru-kuva{
+    max-width: 280px;
+    border: 2px solid #732BF5;
 }
 
 /*tekstit*/
@@ -200,11 +205,11 @@ li a {
 
     footer{
         text-align: center;
-        background-color: #212121;
+        background-color: #313030;
         position: fixed;
         bottom: 0%;
         width: 100%;
-        max-height: 15%;
+        max-height: 12%;
         font-size: 16px;
     }
 }
