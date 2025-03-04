@@ -8,16 +8,21 @@ body {
 }
 
 header {
-    background-color: #212121;
+    background-color: #313030;
     padding-bottom: 70px;
-    text-align: right;
+    text-align: center;
     height: 20px;
     width: 100%;    
 }
 
 footer{
-    flex-direction: column;
-    text-align: center;
+    font-size: 18px;
+    color: #dbd7d7;
+    background-color: #313030;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 h1{
@@ -84,7 +89,7 @@ li{
 }
 
 li a {
-    display: block;
+    display: inline-block;
     height: 15px;
     color: #dbd7d7;
     text-align: center;
@@ -206,10 +211,38 @@ li a {
 
 /*mobiili-koko*/
 @media (max-width: 600px) {
-    
+    nav a{
+        font-size: 15px;
+        width: 100px;
+        height: 20px;
+        padding: 7px;
+        margin: 3px 5px;
+    }
+    li a {
+        display: block;
+        height: 10px;
+        color: #dbd7d7;
+        text-align: center;
+        padding: 8px 20px;
+        margin: 3px 5px;
+        text-decoration: none;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /*tabletti-koko*/
 @media screen and (min-width: 600px) {
-    
+    nav a{
+        font-size: 15px;
+
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }
