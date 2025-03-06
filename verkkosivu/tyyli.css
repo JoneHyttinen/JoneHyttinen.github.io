@@ -172,6 +172,24 @@ li a {
     word-spacing: 50px;
 }
 
+#yhteystietotxt{
+    color: #dbd7d7;
+    border: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 3.5;
+}
+
+#yhteystieto2txt{
+    color: #dbd7d7;
+    border: 0;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 3.5;
+}
+
 /*etusivu asettelu*/
 
 .teksti1-container {
@@ -187,6 +205,34 @@ li a {
 /*tuotesivu asettelu*/
 
 .tuotteet-asettelu{
+    text-align: center;
+}
+
+/*Yhteystiedot asettelu*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: [first] 80px [second] 250px [third] auto [fourth] 250px [fifth] 80px;
+    grid-template-rows: [row1] 10px [row2] 450px [row3] auto;
+    
+}
+.item-a {
+    grid-column-start: second;
+    grid-column-end: span third;
+    grid-row-start: row2;
+    grid-row-end: span row3;
+    border: 2px solid #732BF5;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-b {
+    grid-column-start: fourth;
+    grid-column-end: span fifth;
+    grid-row-start: row2;
+    grid-row-end: span row3;
+    border: 2px solid #732BF5;
+    padding: 10px;
     text-align: center;
 }
 
@@ -284,3 +330,4 @@ li a {
         max-height: 8%;
     }
 }
+
