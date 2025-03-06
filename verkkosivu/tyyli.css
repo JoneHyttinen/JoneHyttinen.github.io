@@ -212,8 +212,8 @@ li a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: [first] 80px [second] 250px [third] auto [fourth] 250px [fifth] 80px;
-    grid-template-rows: [row1] 10px [row2] 450px [row3] auto;
+    grid-template-columns: [first] auto [second] 250px [third] 100px [fourth] 250px [fifth] auto;
+    grid-template-rows: [row1] 10px [row3] auto;
     
 }
 .item-a {
