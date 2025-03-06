@@ -213,9 +213,9 @@ li a {
 .grid-container {
     display: grid;
     grid-template-columns: [first] auto [second] 250px [third] 100px [fourth] 250px [fifth] auto;
-    grid-template-rows: [row1] 10px [row3] auto;
-    
+    grid-template-rows: [row1] 10px [row2] 300px [row3] auto;
 }
+
 .item-a {
     grid-column-start: second;
     grid-column-end: span third;
