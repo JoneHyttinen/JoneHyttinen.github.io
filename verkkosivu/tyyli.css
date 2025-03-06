@@ -144,7 +144,6 @@ li a {
     max-width: 280px;
     vertical-align: middle;
     border: 2px solid #732BF5;
-    margin-bottom: 10%;
 }
 
 /*tekstit*/
@@ -182,6 +181,7 @@ li a {
     margin-top: 10%;
     border: 2px solid #732BF5;
     margin-left: 32%;
+    margin-bottom: 10%;
 }
 
 /*tuotesivu asettelu*/
@@ -198,17 +198,19 @@ li a {
     width: 80%;
     margin: auto;
     padding: 20px;
-    background-color: #333; /* Dark background */
+    border: 2px solid #732BF5;
+    background-color: #313030;
 }
 
 .grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: #212121;
+    color: #dbd7d7;
     font-size: 24px;
     height: 200px;
+    margin-left: 32%;
 }
 
 /*suuri näyttö*/
