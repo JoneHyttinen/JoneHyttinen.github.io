@@ -109,7 +109,7 @@ li a {
     max-height: 85px;
     border: 1px solid #732BF5;
     position: absolute;
-    right: 80%;
+    right: 75%;
     margin-top: 2px;
 }
 
@@ -178,11 +178,11 @@ li a {
     display: inline-block;
     width: 35%;
     text-align: center;
-    margin-top: 10%;
     border: 2px solid #732BF5;
     margin-bottom: 10%;
-    position: absolute;
-    right: 32%;
+    margin-top: 15%;
+    margin-left: 32%;
+    
 }
 
 /*tuotesivu asettelu*/
