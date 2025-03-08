@@ -212,8 +212,9 @@ li a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: [first] auto [second] 250px [third] 100px [fourth] 250px [fifth] auto;
+    grid-template-columns: [first] auto [second] 250px [third] 10% [fourth] 250px [fifth] auto;
     grid-template-rows: [row1] 10px [row2] 300px [row3] auto;
+    gap: 10px;
 }
 
 .item-a {
@@ -274,7 +275,7 @@ li a {
 }
 
 /*mobiili-koko*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header {
         background-color: #313030;
         padding-bottom: 70px;
@@ -304,6 +305,34 @@ li a {
         flex-direction: column;
         text-align: center;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: [first1] auto [second2] auto [third3] auto [fourth4] auto [fifth5] auto [sixth6] auto;
+        grid-template-rows: [rows11] auto [rows22] auto [rows33] auto [rows44] auto [rows55] auto [rows66] auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .item-a{
+        grid-column-start: first1;
+        grid-column-end: span third3;
+        grid-row-start: rows11;
+        grid-row-end: rows33;
+        border: 2px solid #732BF5;
+        text-align: center;
+    }
+
+    .item-b{
+        grid-column-start: first1;
+        grid-column-end: span third3;
+        grid-row-start: rows33;
+        grid-row-end: span rows55;
+        border: 2px solid #732BF5;
+        text-align: center;
+    }
+
+    
 }
 
 /*tabletti-koko*/
