@@ -188,6 +188,7 @@ li a {
     margin-left: 10px;
     margin-right: 10px;
     line-height: 3.5;
+    
 }
 
 /*etusivu asettelu*/
@@ -304,6 +305,9 @@ li a {
     footer{
         flex-direction: column;
         text-align: center;
+        bottom: 0%;
+        position: fixed;
+        width: 100%
     }
 
     .grid-container {
@@ -316,7 +320,7 @@ li a {
 
     .item-a{
         grid-column-start: first1;
-        grid-column-end: span third3;
+        
         grid-row-start: rows11;
         grid-row-end: rows33;
         border: 2px solid #732BF5;
@@ -325,7 +329,7 @@ li a {
 
     .item-b{
         grid-column-start: first1;
-        grid-column-end: span third3;
+        
         grid-row-start: rows33;
         grid-row-end: span rows55;
         border: 2px solid #732BF5;
