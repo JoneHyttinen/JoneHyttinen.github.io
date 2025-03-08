@@ -114,23 +114,23 @@ li a {
 }
 
 #etusivukuva1{
-    max-width: 380px;
-    vertical-align: middle;
+    max-width: 360px;
+    width: 100%;
+    display: block;
     border: 2px solid #732BF5;
     margin-left: 20px;
-    margin-top: 10%;
+    margin-top: -45%;
     position: absolute;
-    bottom: -30%;
 }
 
 #etusivukuva2{
-    max-width: 380px;
+    max-width: 360px;
+    width: 100%;
     vertical-align: middle;
     border: 2px solid #732BF5;
     margin-right: 20px;
-    margin-top: 10%;
+    margin-top: -45%;
     position: absolute;
-    bottom: -30%;
     right: 0%;
 }
 
@@ -175,17 +175,18 @@ li a {
 
 .teksti1-container {
     background-color: #212121;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-right: 38px;
-    padding-left: 38px;
+    width: 36%;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
     border: 2px solid #732BF5;
     margin-bottom: 10%;
-    margin-top: 15%;
-    margin-left: 32%;
+    margin-top: 13%;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -193,6 +194,13 @@ li a {
 
 .tuotteet-asettelu{
     text-align: center;
+}
+
+.tuotesivu-teksti1{
+    text-align: center;
+    border: 2px solid #732BF5;
+    margin-right: 35%;
+    margin-left: 35%;
 }
 
 .grid-container {
@@ -215,7 +223,9 @@ li a {
     color: #dbd7d7;
     font-size: 24px;
     height: 200px;
-    margin-left: 32%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: auto;
 }
 
 /*suuri näyttö*/
