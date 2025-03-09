@@ -308,6 +308,14 @@ li a {
         text-decoration: none;
     }
 
+    #ctateksti{
+        text-align: center;
+        border: 2px solid #732BF5;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 22px;
+    }
+
     footer{
         text-align: center;
         background-color: #313030;
