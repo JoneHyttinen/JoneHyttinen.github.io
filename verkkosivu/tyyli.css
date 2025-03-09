@@ -260,6 +260,7 @@ li a {
 }
 
 .item-a {
+    background-color: #313030;
     grid-column-start: second;
     grid-column-end: span third;
     grid-row-start: row2;
@@ -270,6 +271,7 @@ li a {
 }
 
 .item-b {
+    background-color: #313030;
     grid-column-start: fourth;
     grid-column-end: span fifth;
     grid-row-start: row2;
