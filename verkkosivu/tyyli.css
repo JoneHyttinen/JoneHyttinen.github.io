@@ -171,6 +171,18 @@ li a {
     word-spacing: 50px;
 }
 
+#tuotesivu-otsikko1{
+    text-align: center;
+}
+
+
+.tuotesivu-teksti1{
+    text-align: center;
+    border: 2px solid #732BF5;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
 /*etusivu asettelu*/
 
 .teksti1-container {
@@ -194,13 +206,6 @@ li a {
 
 .tuotteet-asettelu{
     text-align: center;
-}
-
-.tuotesivu-teksti1{
-    text-align: center;
-    border: 2px solid #732BF5;
-    margin-right: 35%;
-    margin-left: 35%;
 }
 
 .grid-container {
