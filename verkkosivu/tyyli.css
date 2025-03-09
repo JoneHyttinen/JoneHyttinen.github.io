@@ -444,6 +444,15 @@ li a {
         font-size: 22px;
     }
 
+    #paalogo{
+        max-width: 283px;
+        max-height: 85px;
+        border: 1px solid #732BF5;
+        position: absolute;
+        right: 84%;
+        margin-top: 2px;
+    }
+
     #etusivukuva1{
         max-width: 360px;
         width: 100%;
