@@ -327,6 +327,18 @@ li a {
         margin-left: 35%;
     }
 
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #732BF5;
+        background-color: #313030;
+    }
+
     .grid-container2 {
         display: grid;
         grid-template-columns: [first1] auto [second2] auto [third3] auto [fourth4] auto [fifth5] auto [sixth6] auto;
