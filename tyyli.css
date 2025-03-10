@@ -183,6 +183,12 @@ li a {
     margin-left: 35%;
 }
 
+.tuoteteksti {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #dbd7d7;
+}
+
 #yhteystietotxt{
     color: #dbd7d7;
     border: 0;
@@ -249,10 +255,6 @@ li a {
     margin-right: 15%;
 }
 
-.tuoteteksti {
-    padding: 10px;
-    margin-bottom: 10px;
-}
 
 /*Yhteystiedot asettelu*/
 
@@ -575,7 +577,6 @@ li a {
         margin-top: 10%;
         margin-left: auto;
         margin-right: auto;
-        
     }
 
     #ctateksti{
@@ -584,6 +585,14 @@ li a {
         margin-left: 30px;
         margin-right: 30px;
         font-size: 22px;
+    }
+
+    .tuotesivu-teksti1{
+        text-align: center;
+        border: 2px solid #732BF5;
+        margin-right: 35%;
+        margin-left: 35%;
+        font-size: 24px;
     }
 
     #paalogo{
