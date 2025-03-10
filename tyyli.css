@@ -586,6 +586,7 @@ li a {
         margin-left: 32px;
         margin-top: -32%;
         position: absolute;
+        top: 85%;
     }
 
     #etusivukuva2{
@@ -597,6 +598,7 @@ li a {
         margin-right: 32px;
         margin-top: -32%;
         position: absolute;
+        top: 85%;
         right: 0%;
     }
 
