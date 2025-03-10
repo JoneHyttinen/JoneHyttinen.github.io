@@ -336,7 +336,7 @@ li a {
         background-image: url("background-kuva.jpg");
         background-size: cover;
         height: 620px;
-        width: 100%;
+        width: 50%;
     }
 
     .teksti1-container {
