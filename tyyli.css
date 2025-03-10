@@ -415,8 +415,8 @@ li a {
         grid-template-columns: [first1] auto [second2] auto [third3] auto [fourth4] auto [fifth5] auto [sixth6] auto;
         grid-template-rows: [rows11] auto [rows22] auto [rows33] auto [rows44] auto [rows55] auto [rows66] auto;
         gap: 10px;
-        padding: 15px;
-        margin-bottom: 40%;
+        padding: 25px;
+        margin-bottom: 50%;
     }
 
     .item-a{
@@ -427,7 +427,7 @@ li a {
         border: 2px solid #732BF5;
         text-align: center;
         margin: auto;
-        margin-bottom: 20px;
+        
     }
 
     .item-b{
