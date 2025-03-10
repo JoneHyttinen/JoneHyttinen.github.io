@@ -346,15 +346,15 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 55%;
         padding-top: 12px;
         padding-bottom: 12px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
         text-align: center;
         border: 2px solid #732BF5;
         margin-bottom: auto;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -364,11 +364,11 @@ li a {
     }
 
     #etuotsikko{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #ctateksti{
-        font-size: 18px;
+        font-size: 15px;
         margin: auto;
     }
 
