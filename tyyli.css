@@ -495,9 +495,9 @@ li a {
         display: block;
         border: 2px solid #732BF5;
         margin-left: 10px;
-        margin-top: -28%;
+        margin-top: -32%;
         position: absolute;
-        top: 100%;
+        top: 83%;
     }
 
     #etusivukuva2{
@@ -507,9 +507,9 @@ li a {
         vertical-align: middle;
         border: 2px solid #732BF5;
         margin-right: 10px;
-        margin-top: -28%;
+        margin-top: -32%;
         position: absolute;
-        top: 100%;
+        top: 83%;
         right: 0%;
     }
 
