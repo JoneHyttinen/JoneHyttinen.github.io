@@ -321,11 +321,11 @@ li a {
     }
 
     #etusivukuva1 {
-        size: 0;
+        max-width: 120px;
     }
 
     #etusivukuva2 {
-        size: 0;
+        max-width: 120px;
     }
 
     .tuotesivu-teksti1{
