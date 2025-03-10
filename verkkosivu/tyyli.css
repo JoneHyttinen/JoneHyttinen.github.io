@@ -402,7 +402,7 @@ li a {
         grid-template-rows: [rows11] auto [rows22] auto [rows33] auto [rows44] auto [rows55] auto [rows66] auto;
         gap: 10px;
         padding: 10px;
-        margin: auto;
+        margin-bottom: 40%;
     }
 
     .item-a{
