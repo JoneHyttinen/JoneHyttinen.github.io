@@ -321,24 +321,11 @@ li a {
     }
 
     #etusivukuva1 {
-        max-width: 120px;
-        width: 100%;
-        display: block;
-        border: 2px solid #732BF5;
-        margin-left: 20px;
-        margin-top: -45%;
-        position: absolute;
+        display: none;
     }
 
     #etusivukuva2 {
-        max-width: 120px;
-        width: 100%;
-        vertical-align: middle;
-        border: 2px solid #732BF5;
-        margin-right: 20px;
-        margin-top: -45%;
-        position: absolute;
-        right: 0%;
+        display: none;
     }
 
     .tuotesivu-teksti1{
