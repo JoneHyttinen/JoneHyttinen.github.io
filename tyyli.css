@@ -615,7 +615,7 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 36%;
+        width: 34%;
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: center;
@@ -660,7 +660,7 @@ li a {
         margin-left: 25px;
         margin-top: -35%;
         position: absolute;
-        top: 93%;
+        top: 95%;
     }
 
     #etusivukuva2{
@@ -672,7 +672,7 @@ li a {
         margin-right: 25px;
         margin-top: -35%;
         position: absolute;
-        top: 93%;
+        top: 95%;
         right: 0%;
     }
 
