@@ -658,7 +658,6 @@ li a {
         display: block;
         border: 2px solid #732BF5;
         margin-left: 25px;
-        margin-top: -35%;
         position: absolute;
         top: 95%;
     }
@@ -670,7 +669,6 @@ li a {
         vertical-align: middle;
         border: 2px solid #732BF5;
         margin-right: 25px;
-        margin-top: -35%;
         position: absolute;
         top: 95%;
         right: 0%;
