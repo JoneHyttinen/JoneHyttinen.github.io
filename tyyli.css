@@ -336,7 +336,7 @@ li a {
         background-image: url("background-kuva.jpg");
         background-size: cover;
         height: 620px;
-        width: 50%;
+        width: 100%;
     }
 
     .teksti1-container {
@@ -392,9 +392,22 @@ li a {
         gap: 20px;
         width: 80%;
         margin: auto;
+        margin-bottom: 40%;
         padding: 20px;
         border: 2px solid #732BF5;
         background-color: #313030;
+    }
+
+    .grid-item {
+        background-color: #212121;
+        padding: 20px;
+        padding-bottom: 150px;
+        text-align: center;
+        color: #dbd7d7;
+        font-size: 24px;
+        height: 200px;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .grid-container2 {
