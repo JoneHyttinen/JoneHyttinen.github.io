@@ -135,13 +135,13 @@ li a {
 }
 
 #korvakoru-kuva{
-    max-width: 280px;
+    max-width: 250px;
     vertical-align: middle;
     border: 2px solid #732BF5;
 }
 
 #napakoru-kuva{
-    max-width: 280px;
+    max-width: 250px;
     vertical-align: middle;
     border: 2px solid #732BF5;
 }
@@ -229,27 +229,29 @@ li a {
 .grid-container1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     width: 80%;
     margin: auto;
-    margin-bottom: 140px;
-    margin-top: 30px;
     padding: 20px;
     border: 2px solid #732BF5;
     background-color: #313030;
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #212121;
+    padding: 20px;
+    padding-bottom: 150px;
+    text-align: center;
     color: #dbd7d7;
     font-size: 24px;
     height: 200px;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.tuoteteksti {
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /*Yhteystiedot asettelu*/
