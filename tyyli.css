@@ -610,6 +610,10 @@ li a {
         text-decoration: none;
     }
 
+    #etuotsikko{
+        font-size: 375%;
+    }
+
     .teksti1-container {
         background-color: #212121;
         display: flex;
