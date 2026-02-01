@@ -33,11 +33,13 @@ body {
 
 header {
     background-color: var(--bg-medium);
-    padding: 1rem 0 1.5rem;
-    text-align: center;
+    padding: 1rem 1.5rem;
     width: 100%;
-    position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -110,21 +112,26 @@ a:hover {
 
 /*navigaatio*/
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
 ol {
     list-style-type: none;
-    margin: 0.5rem;
+    margin: 0;
     padding: 0.25rem;
-    width: fit-content;
-    overflow: hidden;
+    display: flex;
+    gap: 0.5rem;
     background-color: var(--bg-light);
-    float: right;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(115, 43, 245, 0.2);
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
 li a {
@@ -151,18 +158,13 @@ li a:hover {
     max-height: 85px;
     height: auto;
     border: 1px solid var(--primary-color);
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(115, 43, 245, 0.2);
     transition: transform var(--transition-speed) ease;
-    transform-origin: center;
 }
 
 #paalogo:hover {
-    transform: translateY(-50%) scale(1.05);
+    transform: scale(1.05);
 }
 
 #etusivukuva1 {
@@ -333,6 +335,17 @@ li a:hover {
     backdrop-filter: blur(10px);
 }
 
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
 /*tuotesivu asettelu*/
 
 .tuotteet-asettelu {
@@ -340,8 +353,9 @@ li a:hover {
 }
 
 .grid-container1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     width: 90%;
     max-width: 1200px;
@@ -362,6 +376,9 @@ li a:hover {
     border-radius: 12px;
     transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
     border: 1px solid rgba(115, 43, 245, 0.3);
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 450px;
 }
 
 .grid-item:hover {
@@ -374,8 +391,9 @@ li a:hover {
 /*Yhteystiedot asettelu*/
 
 .grid-container2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     width: 90%;
     max-width: 1000px;
@@ -391,6 +409,9 @@ li a:hover {
     text-align: center;
     box-shadow: 0 8px 24px rgba(115, 43, 245, 0.3);
     transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    flex: 1 1 280px;
+    min-width: 280px;
+    max-width: 450px;
 }
 
 .item-a:hover, .item-b:hover {
@@ -401,19 +422,18 @@ li a:hover {
 /*mobiili-koko*/
 @media screen and (max-width: 600px) {
     header {
-        padding: 0.75rem 0 1rem;
+        padding: 0.75rem 1rem;
+        justify-content: center;
+        gap: 1rem;
     }
 
-    nav ol {
-        float: none;
-        margin: 0.5rem auto;
-        display: flex;
-        flex-wrap: wrap;
+    nav {
+        width: 100%;
         justify-content: center;
     }
 
-    li {
-        float: none;
+    nav ol {
+        margin: 0;
     }
 
     li a {
@@ -428,7 +448,7 @@ li a:hover {
     }
 
     #etusivu {
-        background-image: url("background-kuva.jpg");
+        background-image: url("../images/background-kuva.jpg");
         background-size: cover;
         background-position: center;
         min-height: 100vh;
@@ -436,7 +456,7 @@ li a:hover {
     
     @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
         #etusivu {
-            background-image: url("background-kuva.webp");
+            background-image: url("../images/background-kuva.webp");
         }
     }
 
@@ -473,19 +493,19 @@ li a:hover {
     }
 
     .grid-container1 {
-        grid-template-columns: 1fr;
         width: 90%;
         padding: 1.5rem;
         gap: 1.5rem;
+        flex-direction: column;
     }
 
     .grid-item {
         padding: 1.5rem;
         margin: 0;
+        max-width: 100%;
     }
 
     .grid-container2 {
-        grid-template-columns: 1fr;
         width: 90%;
         padding: 1.5rem;
         gap: 1.5rem;
@@ -495,7 +515,7 @@ li a:hover {
 /*tabletti-koko*/
 @media screen and (min-width: 601px) and (max-width: 1199px) {
     #etusivu {
-        background-image: url("background-kuva.jpg");
+        background-image: url("../images/background-kuva.jpg");
         background-size: cover;
         background-position: center;
         min-height: 100vh;
@@ -503,7 +523,7 @@ li a:hover {
     
     @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
         #etusivu {
-            background-image: url("background-kuva.webp");
+            background-image: url("../images/background-kuva.webp");
         }
     }
 
@@ -530,31 +550,23 @@ li a:hover {
     }
 
     .images-container {
-        display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        width: 90%;
         max-width: 1000px;
-        margin: 2rem auto;
-        gap: 1rem;
     }
 
     #etusivukuva1, #etusivukuva2 {
         max-width: 45%;
         flex: 1 1 300px;
-        position: static;
-        margin: 0;
     }
 
     .grid-container1 {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         width: 85%;
         margin: 2rem auto 3rem;
     }
 
     .grid-item {
         margin: 0;
+        min-width: 280px;
     }
 
     .grid-container2 {
@@ -571,7 +583,7 @@ li a:hover {
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
     #etusivu {
-        background-image: url("background-kuva.jpg");
+        background-image: url("../images/background-kuva.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -580,7 +592,7 @@ li a:hover {
     
     @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
         #etusivu {
-            background-image: url("background-kuva.webp");
+            background-image: url("../images/background-kuva.webp");
         }
     }
 
@@ -603,25 +615,15 @@ li a:hover {
         font-size: clamp(1.25rem, 2vw, 1.5rem);
     }
 
-    #paalogo {
-        left: 2rem;
-    }
-
     .images-container {
-        display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 90%;
         max-width: 1400px;
         margin: 3rem auto;
-        gap: 2rem;
     }
 
     #etusivukuva1, #etusivukuva2 {
         max-width: 45%;
         flex: 1;
-        position: static;
-        margin: 0;
     }
 
     .grid-container1 {
