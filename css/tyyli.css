@@ -171,7 +171,7 @@ li a:hover {
 
 header a {
     display: inline-block;
-    line-height: 0;
+    line-height: 1;
 }
 
 #paalogo:hover {
