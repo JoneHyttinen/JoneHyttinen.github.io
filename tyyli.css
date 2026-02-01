@@ -1,150 +1,234 @@
+/*CSS Custom Properties for easier maintenance*/
+:root {
+    --primary-color: #732BF5;
+    --primary-dark: #5a22c4;
+    --bg-dark: #212121;
+    --bg-medium: #313030;
+    --bg-light: #2b2a2a;
+    --text-light: #dbd7d7;
+    --text-white: #ffffff;
+    --selected-bg: rgb(72, 35, 89);
+    --border-width: 2px;
+    --transition-speed: 0.3s;
+    --hover-lift: -2px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*body ja sen elementit*/
 
 body {
-    background-color:#212121;
-    color:#dbd7d7;
-    font-family: sans-serif;
-    margin: 0px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #313030;
-    padding-bottom: 70px;
+    background-color: var(--bg-medium);
+    padding: 1rem 0 1.5rem;
     text-align: center;
-    height: 20px;
-    width: 100%;    
+    width: 100%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-footer{
+footer {
     font-size: 18px;
-    color: #dbd7d7;
-    background-color: #313030;
+    color: var(--text-light);
+    background-color: var(--bg-medium);
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    color: #dbd7d7;
+h1 {
+    color: var(--text-light);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 400%;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin: 0.5rem 0;
+    font-weight: 700;
 }
 
-h2{
-    color: #dbd7d7;
+h2 {
+    color: var(--text-light);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 225%;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    margin: 0.5rem 0;
+    font-weight: 600;
 }
 
-p{
-    color: #dbd7d7;
-    font-family: sans-serif;
-    font-size: 120%;
-    border: 2px solid #732BF5;
-    padding: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
+p {
+    color: var(--text-light);
+    font-family: inherit;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    border: var(--border-width) solid var(--primary-color);
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: rgba(115, 43, 245, 0.05);
 }
 
 /*linkit asettelu ja värit*/
 
-a:link{
-    color: #dbd7d7;
+a:link {
+    color: var(--text-light);
     background-color: transparent;
     text-decoration: none;
+    transition: all var(--transition-speed) ease;
 }
 
-a:visited{
+a:visited {
     color: #a42bf5;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover{
-    color: #ffffff;
+a:hover {
+    color: var(--text-white);
     background-color: transparent;
     text-decoration: none;
+    transform: translateY(var(--hover-lift));
 }
 
-#valittu{
-    color: #dbd7d7;
-    background-color:rgb(72, 35, 89);
+#valittu {
+    color: var(--text-light);
+    background-color: var(--selected-bg);
+    border-radius: 6px;
 }
 
 /*navigaatio*/
 
-ol{
+ol {
     list-style-type: none;
-    margin: 10px;
-    padding: 5px;
+    margin: 0.5rem;
+    padding: 0.25rem;
     width: fit-content;
     overflow: hidden;
-    background-color: #2b2a2a;
+    background-color: var(--bg-light);
     float: right;
-    border: 1px solid #732BF5;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(115, 43, 245, 0.2);
 }
 
-li{
+li {
     float: left;
 }
 
 li a {
     display: inline-block;
-    height: 15px;
-    color: #dbd7d7;
-    font-family: sans-serif;
+    color: var(--text-light);
+    font-family: inherit;
     text-align: center;
-    padding: 15px 25px;
+    padding: 0.75rem 1.25rem;
     text-decoration: none;
-  }
+    transition: all var(--transition-speed) ease;
+    border-radius: 6px;
+}
   
-  li a:hover {
-    background-color: #111; 
-  }
+li a:hover {
+    background-color: #111;
+    transform: translateY(var(--hover-lift));
+    box-shadow: 0 4px 8px rgba(115, 43, 245, 0.3);
+}
 
 /*kuvat*/
 
-#paalogo{
+#paalogo {
     max-width: 283px;
     max-height: 85px;
-    border: 1px solid #732BF5;
+    height: auto;
+    border: 1px solid var(--primary-color);
     position: absolute;
-    right: 75%;
-    margin-top: 2px;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(115, 43, 245, 0.2);
+    transition: transform var(--transition-speed) ease;
+    transform-origin: center;
 }
 
-#etusivukuva1{
+#paalogo:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
+#etusivukuva1 {
     max-width: 360px;
     width: 100%;
+    height: auto;
     display: block;
-    border: 2px solid #732BF5;
-    margin-left: 20px;
-    margin-top: -45%;
-    position: absolute;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 12px;
+    margin: 2rem;
+    box-shadow: 0 4px 16px rgba(115, 43, 245, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-#etusivukuva2{
+#etusivukuva1:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(115, 43, 245, 0.5);
+}
+
+#etusivukuva2 {
     max-width: 360px;
     width: 100%;
+    height: auto;
     vertical-align: middle;
-    border: 2px solid #732BF5;
-    margin-right: 20px;
-    margin-top: -45%;
-    position: absolute;
-    right: 0%;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 12px;
+    margin: 2rem;
+    box-shadow: 0 4px 16px rgba(115, 43, 245, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-#korvakoru-kuva{
-    max-width: 250px;
-    vertical-align: middle;
-    border: 2px solid #732BF5;
+#etusivukuva2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(115, 43, 245, 0.5);
 }
 
-#napakoru-kuva{
+#korvakoru-kuva {
     max-width: 250px;
+    width: 100%;
+    height: auto;
     vertical-align: middle;
-    border: 2px solid #732BF5;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(115, 43, 245, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+#korvakoru-kuva:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(115, 43, 245, 0.5);
+}
+
+#napakoru-kuva {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(115, 43, 245, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+#napakoru-kuva:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(115, 43, 245, 0.5);
 }
 
 /*tekstit*/
@@ -156,24 +240,31 @@ li a {
     text-align: center;
 }
 
-#ctateksti{
+#ctateksti {
     text-align: center;
-    border: 2px solid #732BF5;
-    margin-left: 20%;
-    margin-right: 20%;
+    border: var(--border-width) solid var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(115, 43, 245, 0.1), rgba(115, 43, 245, 0.05));
 }
 
-#ctatekstiyhteystiedot{
+#ctatekstiyhteystiedot {
     text-align: center;
-    border: 2px solid #732BF5;
-    margin-left: 25%;
-    margin-right: 25%;
-    background-color: #313030;
+    border: var(--border-width) solid var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    background-color: var(--bg-medium);
+    border-radius: 8px;
 }
 
-#footerteksti{
+#footerteksti {
     font-style: italic;
     border: 0;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 .spacing {
@@ -184,86 +275,99 @@ li a {
     text-align: center;
 }
 
-.tuotesivu-teksti1{
+.tuotesivu-teksti1 {
     text-align: center;
-    border: 2px solid #732BF5;
-    margin-right: 35%;
-    margin-left: 35%;
-    background-color: #313030;
+    border: var(--border-width) solid var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    background-color: var(--bg-medium);
+    border-radius: 8px;
 }
 
 .tuoteteksti {
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #dbd7d7;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-#yhteystietotxt{
-    color: #dbd7d7;
+#yhteystietotxt {
+    color: var(--text-light);
     border: 0;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 3.5;
-    background-color: #313030;
+    margin: 0;
+    padding: 1rem;
+    line-height: 2.5;
+    background-color: var(--bg-medium);
+    list-style-type: none;
 }
 
-#yhteystieto2txt{
-    color: #dbd7d7;
+#yhteystieto2txt {
+    color: var(--text-light);
     border: 0;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 3.5;
-    background-color: #313030;
-    
+    margin: 0;
+    padding: 1rem;
+    line-height: 2.5;
+    background-color: var(--bg-medium);
+    list-style-type: none;
 }
 
 /*etusivu asettelu*/
 
 .teksti1-container {
-    background-color: #212121;
+    background: linear-gradient(135deg, rgba(115, 43, 245, 0.15), rgba(115, 43, 245, 0.05));
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem;
     text-align: center;
-    border: 2px solid #732BF5;
-    margin-bottom: 10%;
-    margin-top: 13%;
-    margin-left: auto;
-    margin-right: auto;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 16px;
+    margin: 3rem auto;
+    box-shadow: 0 8px 24px rgba(115, 43, 245, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 /*tuotesivu asettelu*/
 
-.tuotteet-asettelu{
+.tuotteet-asettelu {
     text-align: center;
 }
 
 .grid-container1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid #732BF5;
-    background-color: #313030;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(115, 43, 245, 0.1), rgba(49, 48, 48, 0.9));
+    box-shadow: 0 8px 24px rgba(115, 43, 245, 0.2);
 }
 
 .grid-item {
-    background-color: #212121;
-    padding: 20px;
-    padding-bottom: 150px;
+    background: linear-gradient(135deg, rgba(33, 33, 33, 0.9), rgba(43, 42, 42, 0.8));
+    padding: 2rem;
     text-align: center;
-    color: #dbd7d7;
-    font-size: 24px;
-    height: 200px;
-    margin-left: 15%;
-    margin-right: 15%;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    border-radius: 12px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid rgba(115, 43, 245, 0.3);
+}
+
+.grid-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(115, 43, 245, 0.4);
+    border-color: var(--primary-color);
 }
 
 
@@ -271,422 +375,266 @@ li a {
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: [first] auto [second] 250px [third] 10% [fourth] 250px [fifth] auto;
-    grid-template-rows: [row1] 10px [row2] 300px [row3] auto;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
 }
 
-.item-a {
-    background-color: #313030;
-    grid-column-start: second;
-    grid-column-end: span third;
-    grid-row-start: row2;
-    grid-row-end: span row3;
-    border: 2px solid #732BF5;
-    padding: 10px;
+.item-a, .item-b {
+    background: linear-gradient(135deg, rgba(115, 43, 245, 0.1), rgba(49, 48, 48, 0.9));
+    border: var(--border-width) solid var(--primary-color);
+    border-radius: 16px;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 8px 24px rgba(115, 43, 245, 0.3);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
-.item-b {
-    background-color: #313030;
-    grid-column-start: fourth;
-    grid-column-end: span fifth;
-    grid-row-start: row2;
-    grid-row-end: span row3;
-    border: 2px solid #732BF5;
-    padding: 10px;
-    text-align: center;
+.item-a:hover, .item-b:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(115, 43, 245, 0.5);
 }
 
 /*mobiili-koko*/
 @media screen and (max-width: 600px) {
     header {
-        background-color: #313030;
-        padding-bottom: 70px;
-        text-align: center;
-        height: 30px;
-        width: 100%;    
+        padding: 0.75rem 0 1rem;
     }
 
-    nav a{
-        font-size: 15px;
-        width: 100px;
-        height: 15px;
-        padding: 12px;
-        margin: 3px 5px;
+    nav ol {
+        float: none;
+        margin: 0.5rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    ol{
-        list-style-type: none;
-        margin: 8px;
-        padding: 6px;
-        width: fit-content;
-        overflow: hidden;
-        background-color: #2b2a2a;
-        float: right;
-        border: 1px solid #732BF5;
+    li {
+        float: none;
     }
 
     li a {
-        display: block;
-        height: 10px;
-        color: #dbd7d7;
-        text-align: center;
-        padding: 10px 20px;
-        margin: 3px 5px;
-        text-decoration: none;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 
-    footer{
-        flex-direction: column;
-        text-align: center;
-        bottom: 0%;
-        position: fixed;
-        width: 100%
+    footer {
+        position: relative;
+        margin-top: 3rem;
+        padding: 1rem;
     }
 
     #etusivu {
         background-image: url("background-kuva.jpg");
         background-size: cover;
-        height: 620px;
-        width: 100%;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+    @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
+        #etusivu {
+            background-image: url("background-kuva.webp");
+        }
     }
 
     .teksti1-container {
-        background-color: #313030;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65%;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-bottom: auto;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 85%;
+        padding: 1.5rem;
+        margin: 2rem auto;
     }
 
-    #paalogo{
+    #paalogo {
         display: none;
     }
 
-    #etuotsikko{
-        font-size: 52px;
+    #etuotsikko {
+        font-size: clamp(2rem, 8vw, 3.25rem);
     }
 
-    #ctateksti{
-        font-size: 22px;
-        margin: auto;
+    #ctateksti {
+        font-size: clamp(1rem, 4vw, 1.375rem);
+        margin: 0.5rem 0;
     }
 
-    #etusivukuva1 {
+    #etusivukuva1, #etusivukuva2 {
         display: none;
     }
 
-    #etusivukuva2 {
-        display: none;
+    #korvakoru-kuva, #napakoru-kuva {
+        max-width: 200px;
     }
 
-    #korvakoru-kuva{
-        max-width: 180px;
-        vertical-align: middle;
-        border: 2px solid #732BF5;
-    }
-    
-    #napakoru-kuva{
-        max-width: 180px;
-        vertical-align: middle;
-        border: 2px solid #732BF5;
-    }
-
-    .tuotesivu-teksti1{
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-right: 28%;
-        margin-left: 28%;
+    .tuotesivu-teksti1 {
+        width: 85%;
+        margin: 1rem auto;
     }
 
     .grid-container1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        gap: 20px;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 40%;
-        padding: 20px;
-        border: 2px solid #732BF5;
-        background-color: #313030;
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
 
     .grid-item {
-        background-color: #212121;
-        padding: 20px;
-        padding-bottom: 150px;
-        text-align: center;
-        color: #dbd7d7;
-        font-size: 24px;
-        height: 200px;
-        margin-left: 15%;
-        margin-right: 15%;
+        padding: 1.5rem;
+        margin: 0;
     }
 
     .grid-container2 {
-        display: grid;
-        grid-template-columns: [first1] auto [second2] auto [third3] auto [fourth4] auto [fifth5] auto [sixth6] auto;
-        grid-template-rows: [rows11] auto [rows22] auto [rows33] auto [rows44] auto [rows55] auto [rows66] auto;
-        gap: 10px;
-        padding: 35px;
-        margin-bottom: 65%;
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
-
-    .item-a{
-        grid-column-start: first1;
-        
-        grid-row-start: rows11;
-        grid-row-end: rows33;
-        border: 2px solid #732BF5;
-        text-align: center;
-        margin: auto;
-        
-    }
-
-    .item-b{
-        grid-column-start: first1;
-        
-        grid-row-start: rows33;
-        grid-row-end: span rows55;
-        border: 2px solid #732BF5;
-        text-align: center;
-        margin: auto;
-    }
-
-    
 }
 
 /*tabletti-koko*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) and (max-width: 1199px) {
     #etusivu {
         background-image: url("background-kuva.jpg");
         background-size: cover;
-        height: 800px;
-        width: 100%;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+    @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
+        #etusivu {
+            background-image: url("background-kuva.webp");
+        }
     }
 
-    nav a{
-        font-size: 15px;
-        width: 100px;
-        height: 20px;
-        padding: 10px;
-        margin: 5px 20px;
+    header {
+        padding: 1rem 0 1.5rem;
     }
 
     .teksti1-container {
-        background-color: #313030;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-bottom: 10%;
-        margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 70%;
+        padding: 1.5rem;
+        margin: 3rem auto;
     }
 
-    #paalogo{
+    #paalogo {
         display: none;
     }
 
-    #etuotsikko{
-        font-size: 36px;
+    #etuotsikko {
+        font-size: clamp(2.25rem, 5vw, 3rem);
     }
 
-    #ctateksti{
-        font-size: 18px;
-        margin: auto;
+    #ctateksti {
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
     }
 
-    #etusivukuva1{
-        max-width: 200px;
-        width: 100%;
-        max-height: 295px;
-        display: block;
-        border: 2px solid #732BF5;
-        margin-left: 10px;
-        margin-top: -32%;
-        position: absolute;
-        top: 68%;
+    .images-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 1000px;
+        margin: 2rem auto;
+        gap: 1rem;
     }
 
-    #etusivukuva2{
-        max-width: 200px;
-        width: 100%;
-        max-height: 295px;
-        vertical-align: middle;
-        border: 2px solid #732BF5;
-        margin-right: 10px;
-        margin-top: -32%;
-        position: absolute;
-        top: 68%;
-        right: 0%;
+    #etusivukuva1, #etusivukuva2 {
+        max-width: 45%;
+        flex: 1 1 300px;
+        position: static;
+        margin: 0;
     }
 
     .grid-container1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 10%;
-        padding: 20px;
-        border: 2px solid #732BF5;
-        background-color: #313030;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        width: 85%;
+        margin: 2rem auto 3rem;
     }
-    
+
     .grid-item {
-        background-color: #212121;
-        padding: 20px;
-        padding-bottom: 150px;
-        text-align: center;
-        color: #dbd7d7;
-        font-size: 24px;
-        height: 200px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin: 0;
     }
 
     .grid-container2 {
-        display: grid;
-        grid-template-columns: [first] auto [second] 250px [third] 10% [fourth] 250px [fifth] auto;
-        grid-template-rows: [row1] 10px [row2] 300px [row3] auto;
-        gap: 10px;
-        margin-bottom: 8%;
+        width: 85%;
+        margin: 2rem auto 3rem;
     }
 
-    footer{
-        flex-direction: column;
-        text-align: center;
-        background-color: #313030;
-        position: fixed;
-        bottom: 0%;
-        width: 100%;
-        max-height: 5%;
+    footer {
+        position: relative;
+        margin-top: 3rem;
     }
 }
 
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
-    
     #etusivu {
         background-image: url("background-kuva.jpg");
         background-size: cover;
-        height: 800px;
-        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
     }
-
-    nav a{
-        width: 100px;
-        height: 20px;
-        padding: 10px;
-        margin: 5px 20px;
-    }
-
-    li a {
-        display: block;
-        height: 15px;
-        color: #dbd7d7;
-        text-align: center;
-        font-size: 18px;
-        padding: 15px 25px;
-        margin: 5px 15px;
-        text-decoration: none;
-    }
-
-    #etuotsikko{
-        font-size: 375%;
+    
+    @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=")) {
+        #etusivu {
+            background-image: url("background-kuva.webp");
+        }
     }
 
     .teksti1-container {
-        background-color: #212121;
+        width: 70%;
+        max-width: 900px;
+        padding: 2.5rem;
+        margin: 4rem auto;
+    }
+
+    #etuotsikko {
+        font-size: clamp(3rem, 6vw, 4rem);
+    }
+
+    #ctateksti {
+        font-size: clamp(1.25rem, 2vw, 1.75rem);
+    }
+
+    .tuotesivu-teksti1 {
+        font-size: clamp(1.25rem, 2vw, 1.5rem);
+    }
+
+    #paalogo {
+        left: 2rem;
+    }
+
+    .images-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 34%;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-bottom: 10%;
-        margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        max-width: 1400px;
+        margin: 3rem auto;
+        gap: 2rem;
     }
 
-    #ctateksti{
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 22px;
+    #etusivukuva1, #etusivukuva2 {
+        max-width: 45%;
+        flex: 1;
+        position: static;
+        margin: 0;
     }
 
-    .tuotesivu-teksti1{
-        text-align: center;
-        border: 2px solid #732BF5;
-        margin-right: 35%;
-        margin-left: 35%;
-        font-size: 24px;
+    .grid-container1 {
+        max-width: 1400px;
     }
 
-    #paalogo{
-        max-width: 283px;
-        max-height: 85px;
-        border: 1px solid #732BF5;
-        position: absolute;
-        right: 84%;
-        margin-top: 2px;
+    .grid-container2 {
+        max-width: 1200px;
     }
 
-    #etusivukuva1{
-        max-width: 360px;
-        width: 100%;
-        max-height: 550px;
-        display: block;
-        border: 2px solid #732BF5;
-        margin-left: 25px;
-        position: absolute;
-        top: 90%;
-    }
-
-    #etusivukuva2{
-        max-width: 360px;
-        width: 100%;
-        max-height: 550px;
-        vertical-align: middle;
-        border: 2px solid #732BF5;
-        margin-right: 25px;
-        position: absolute;
-        top: 90%;
-        right: 0%;
-    }
-
-    footer{
-        text-align: center;
-        background-color: #313030;
-        position: fixed;
-        bottom: 0%;
-        width: 100%;
-        max-height: 12%;
-        font-size: 16px;
+    footer {
+        position: relative;
+        margin-top: 4rem;
+        font-size: 1rem;
     }
 }

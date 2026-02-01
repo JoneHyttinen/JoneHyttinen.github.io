@@ -13,7 +13,10 @@
 
   <body id="etusivu">
     <header>
-      <img id="paalogo" src="trendikoru.jpg" alt="Trendikoru logo" />
+      <picture>
+        <source srcset="trendikoru.webp" type="image/webp">
+        <img id="paalogo" src="trendikoru.jpg" alt="Trendikoru logo" loading="lazy" />
+      </picture>
       <nav>
         <ol>
           <li><a href="index.html" id="valittu">Etusivu</a></li>
@@ -30,17 +33,25 @@
       </div>
     </section>
 
-    <div>
-      <img
-        id="etusivukuva1"
-        src="etusivukuva1.jpg"
-        alt="Lähikuva naishenkilön korvakorusta"
-      />
-      <img
-        id="etusivukuva2"
-        src="etusivukuva2.jpg"
-        alt="Naishenkilö, jolla on monta lävistystä"
-      />
+    <div class="images-container">
+      <picture>
+        <source srcset="etusivukuva1.webp" type="image/webp">
+        <img
+          id="etusivukuva1"
+          src="etusivukuva1.jpg"
+          alt="Lähikuva naishenkilön korvakorusta"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source srcset="etusivukuva2.webp" type="image/webp">
+        <img
+          id="etusivukuva2"
+          src="etusivukuva2.jpg"
+          alt="Naishenkilö, jolla on monta lävistystä"
+          loading="lazy"
+        />
+      </picture>
     </div>
 
     <footer>
