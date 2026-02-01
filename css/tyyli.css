@@ -319,18 +319,39 @@ li a:hover {
 
 /*etusivu asettelu*/
 
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1400px;
+    margin: 3rem auto;
+}
+
+.hero-image-left,
+.hero-image-right {
+    flex: 0 1 360px;
+    display: flex;
+}
+
+.hero-image-left img,
+.hero-image-right img {
+    width: 100%;
+    height: auto;
+}
+
 .teksti1-container {
     background: linear-gradient(135deg, rgba(115, 43, 245, 0.15), rgba(115, 43, 245, 0.05));
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    flex: 1 1 400px;
     max-width: 800px;
     padding: 2rem;
     text-align: center;
     border: var(--border-width) solid var(--primary-color);
     border-radius: 16px;
-    margin: 3rem auto;
     box-shadow: 0 8px 24px rgba(115, 43, 245, 0.3);
     backdrop-filter: blur(10px);
 }
@@ -460,10 +481,21 @@ li a:hover {
         }
     }
 
-    .teksti1-container {
-        width: 85%;
-        padding: 1.5rem;
+    .hero-container {
+        flex-direction: column;
+        width: 90%;
         margin: 2rem auto;
+    }
+
+    .hero-image-left,
+    .hero-image-right {
+        display: none;
+    }
+
+    .teksti1-container {
+        width: 100%;
+        padding: 1.5rem;
+        margin: 0;
     }
 
     #paalogo {
@@ -531,10 +563,20 @@ li a:hover {
         padding: 1rem 0 1.5rem;
     }
 
+    .hero-container {
+        max-width: 1200px;
+        gap: 1.5rem;
+    }
+
+    .hero-image-left,
+    .hero-image-right {
+        flex: 0 1 280px;
+    }
+
     .teksti1-container {
-        width: 70%;
+        flex: 1 1 300px;
         padding: 1.5rem;
-        margin: 3rem auto;
+        margin: 0;
     }
 
     #paalogo {
@@ -555,8 +597,7 @@ li a:hover {
     }
 
     #etusivukuva1, #etusivukuva2 {
-        max-width: 45%;
-        flex: 1 1 300px;
+        max-width: 100%;
     }
 
     .grid-container1 {
@@ -596,11 +637,22 @@ li a:hover {
         }
     }
 
+    .hero-container {
+        max-width: 1600px;
+        gap: 2rem;
+        margin: 4rem auto;
+    }
+
+    .hero-image-left,
+    .hero-image-right {
+        flex: 0 1 360px;
+    }
+
     .teksti1-container {
-        width: 70%;
+        flex: 1 1 400px;
         max-width: 900px;
         padding: 2.5rem;
-        margin: 4rem auto;
+        margin: 0;
     }
 
     #etuotsikko {
@@ -622,8 +674,7 @@ li a:hover {
     }
 
     #etusivukuva1, #etusivukuva2 {
-        max-width: 45%;
-        flex: 1;
+        max-width: 100%;
     }
 
     .grid-container1 {
